@@ -3,6 +3,7 @@ package example.android.com.myapplication
 import android.content.Context
 import android.content.Intent
 import android.net.Uri
+import org.jetbrains.anko.browse
 
 /**
  * Created by hakim on 2/22/18.
@@ -16,6 +17,14 @@ class Util {
     fun openFacebookPage(ctx: Context, facebookUrl: String) {
         val intent = Intent(Intent.ACTION_VIEW, Uri.parse(facebookUrl))
         ctx.startActivity(intent)
+    }
+
+    /**
+     * This function opens a web page
+     */
+
+    fun browseUrl(ctx:Context,url:String){
+       ctx.browse(url)
     }
 
     /**

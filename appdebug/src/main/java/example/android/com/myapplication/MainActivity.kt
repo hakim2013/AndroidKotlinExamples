@@ -3,6 +3,8 @@ package example.android.com.myapplication
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
+import org.jetbrains.anko.browse
+import org.jetbrains.anko.makeCall
 import org.jetbrains.anko.toast
 
 class MainActivity : AppCompatActivity() {
@@ -21,6 +23,7 @@ class MainActivity : AppCompatActivity() {
         factButton.setOnClickListener({
             val i = util.factorial(factEditText.text.toString().toInt())
             toast("Le factoriel est: $i")
+
         })
         // Onclick of the third button
         avgButton.setOnClickListener({
