@@ -1,1 +1,1 @@
-include ':app', ':appdebug'
+include ':app', ':appdebug', ':citieslist'
