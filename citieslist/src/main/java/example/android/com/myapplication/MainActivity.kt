@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
 
     fun loadData():List<City> {
 
-        val imagesTab = arrayListOf(R.drawable.paris_list,R.drawable.london_list,R.drawable.barcelona_list,R.drawable.istanbul_list,R.drawable.roma_list)
+        val imagesTab = arrayOf(R.drawable.paris_list,R.drawable.london_list,R.drawable.barcelona_list,R.drawable.istanbul_list,R.drawable.roma_list)
         val namesTab = resources.getStringArray(R.array.cities)
         val touristsTab = resources.getStringArray(R.array.tourists)
         val list = mutableListOf<City>()
